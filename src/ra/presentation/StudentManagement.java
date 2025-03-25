@@ -19,13 +19,13 @@ public class StudentManagement {
             int choice =  sc.nextInt();
             switch(choice){
                 case 1:
-                    displayStudent(student);
+                    displayStudent(studentMap);
                     break;
                 case 2:
-                    addStudent(student, sc);
+                    addStudent(studentMap, sc);
                     break;
                 case 3:
-                    deleteStudent();
+                    deleteStudent(studentMap,sc);
                     break;
                 case 4:
                     break;
@@ -52,7 +52,7 @@ public class StudentManagement {
     }
     public static void addStudent(Map<String, Student> studentMap){
         Student student = new Student();
-        student.inputData(Student, sc);
+        student.inputData(studentMap, sc);
 
     }
     public static void deleteStudent(Map<String, Student> studentMap){
@@ -66,7 +66,7 @@ public class StudentManagement {
     public static void caculateAverage(Map<String, Student> studentMap){
         float totalavg = 0;
         for(Map.Entry<String, Student> entry : studentMap.entrySet()){
-            tatolavg =
+
         }
     }
 }

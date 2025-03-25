@@ -53,7 +53,7 @@ public class Student {
         this.avg = avg;
     }
 
-    void inputData(Map<String, Student> studentMap, Scanner sc){
+    public void inputData(Map<String, Student> studentMap, Scanner sc){
         System.out.print("Nhap ma sinh vien");
         sc.nextLine();
         while(true){
