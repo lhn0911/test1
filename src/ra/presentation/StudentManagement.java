@@ -19,13 +19,13 @@ public class StudentManagement {
             int choice =  sc.nextInt();
             switch(choice){
                 case 1:
-                    displayStudent(studentMap);
+                    displayStudent();
                     break;
                 case 2:
-                    addStudent(studentMap, sc);
+                    addStudent();
                     break;
                 case 3:
-                    deleteStudent(studentMap,sc);
+                    deleteStudent();
                     break;
                 case 4:
                     break;
